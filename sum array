@@ -1,0 +1,9 @@
+// sum array
+
+function chk(a){
+    let sum = 0;
+    a.forEach((i) => sum += i);
+   return sum;
+}
+console.log(chk([10,20,30]));
+
