@@ -1,0 +1,6 @@
+function chk(a){
+    let r = a.reverse;
+  let f =  a === r? "win":"false";
+    return f;
+}
+console.log(chk(101));
