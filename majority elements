@@ -1,0 +1,26 @@
+// The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+const majorityElement = function(nums){
+    // Your code goes here
+    let cn = 0;
+    let r = 0;
+    for(let n of nums){
+        if(cn === 0){
+            r = n;
+        }
+        if(r === n){
+            cn = cn+1;
+        }
+        else{
+            cn = cn - 1;
+        }
+    }
+    return r;
+    
+};
+// Example
+ Input:
+nums = [3,2,3]
+
+Output:
+3
